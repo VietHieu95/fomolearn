@@ -15,7 +15,7 @@ import {
   Folder
 } from "lucide-react";
 import { coursesData } from "@/lib/courses-data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Lesson } from "@shared/schema";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -31,6 +31,11 @@ export default function CoursePage() {
   const [, setLocation] = useLocation();
   const [selectedLesson, setSelectedLesson] = useState<Lesson | null>(null);
   const [completedLessons, setCompletedLessons] = useState<Set<string>>(new Set());
+
+  // Reset selected lesson when course changes
+  useEffect(() => {
+    setSelectedLesson(null);
+  }, [id]);
 
   const course = coursesData.find((c) => c.id === id);
 
