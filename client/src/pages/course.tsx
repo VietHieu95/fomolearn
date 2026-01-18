@@ -149,14 +149,27 @@ export default function CoursePage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center">
-                    <Play className="h-16 w-16 text-primary/50 mx-auto mb-2" />
-                    <p className="text-muted-foreground">Video Player</p>
-                    <p className="text-sm text-muted-foreground/70">
-                      Duration: {selectedLesson.duration}
-                    </p>
-                  </div>
+                <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-4">
+                  {selectedLesson.videoUrl ? (
+                    <iframe
+                      src={selectedLesson.videoUrl}
+                      title={selectedLesson.title}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      data-testid="video-player"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <div className="text-center">
+                        <Play className="h-16 w-16 text-primary/50 mx-auto mb-2" />
+                        <p className="text-muted-foreground">Video Coming Soon</p>
+                        <p className="text-sm text-muted-foreground/70">
+                          Duration: {selectedLesson.duration}
+                        </p>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="flex items-center justify-between">
                   <Button

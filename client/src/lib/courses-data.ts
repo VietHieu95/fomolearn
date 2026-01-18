@@ -9,11 +9,11 @@ export const coursesData: Course[] = [
     icon: "lock",
     description: "Master the art of phantom trading with advanced SMC concepts",
     lessons: [
-      { id: "p1", title: "Introduction to Phantom Trading", duration: "15:30" },
-      { id: "p2", title: "Market Structure Basics", duration: "22:45" },
-      { id: "p3", title: "Order Blocks & Imbalances", duration: "28:10" },
-      { id: "p4", title: "Liquidity Concepts", duration: "31:20" },
-      { id: "p5", title: "Entry Models", duration: "25:00" },
+      { id: "p1", title: "Introduction to Phantom Trading", duration: "15:30", videoUrl: "https://www.youtube.com/embed/WNazKe0q69Q" },
+      { id: "p2", title: "Market Structure Basics", duration: "22:45", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "p3", title: "Order Blocks & Imbalances", duration: "28:10", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "p4", title: "Liquidity Concepts", duration: "31:20", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "p5", title: "Entry Models", duration: "25:00", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
     ],
   },
   {
