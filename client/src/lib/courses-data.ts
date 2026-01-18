@@ -1,15 +1,6 @@
-import { type User, type InsertUser, type Course, type Lesson } from "@shared/schema";
-import { randomUUID } from "crypto";
+import type { Course } from "@shared/schema";
 
-export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
-  getAllCourses(): Promise<Course[]>;
-  getCourseById(id: string): Promise<Course | undefined>;
-}
-
-const coursesData: Course[] = [
+export const coursesData: Course[] = [
   {
     id: "phantom-course",
     title: "Phantom Course",
@@ -219,43 +210,17 @@ const coursesData: Course[] = [
   },
 ];
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-  private courses: Map<string, Course>;
-
-  constructor() {
-    this.users = new Map();
-    this.courses = new Map();
-    
-    coursesData.forEach((course) => {
-      this.courses.set(course.id, course);
-    });
-  }
-
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
-  }
-
-  async getAllCourses(): Promise<Course[]> {
-    return Array.from(this.courses.values());
-  }
-
-  async getCourseById(id: string): Promise<Course | undefined> {
-    return this.courses.get(id);
-  }
-}
-
-export const storage = new MemStorage();
+export const specialLinks = [
+  {
+    id: "trader-heaven",
+    title: "Special Link (TRADER HEAVEN)",
+    icon: "fire",
+    description: "Exclusive trader resources and tools",
+  },
+  {
+    id: "other-documents",
+    title: "Other Documents",
+    icon: "folder",
+    description: "Additional learning materials and resources",
+  },
+];
