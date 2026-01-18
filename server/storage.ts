@@ -36,10 +36,14 @@ const coursesData: Course[] = [
     icon: "book",
     description: "Complete FX trading course from beginner to advanced",
     lessons: [
-      { id: "h1", title: "Getting Started with Forex", duration: "18:20" },
-      { id: "h2", title: "Currency Pairs Explained", duration: "24:15" },
-      { id: "h3", title: "Technical Analysis Foundations", duration: "35:40" },
-      { id: "h4", title: "Risk Management", duration: "29:50" },
+      { id: "h1", title: "Supply - Demand Basics", duration: "13:31", videoUrl: "https://www.youtube.com/embed/iBjN28UVT9s" },
+      { id: "h2", title: "Market Structure", duration: "24:15", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "h3", title: "Highs and Lows", duration: "35:40", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "h4", title: "Ranges & Range Trading", duration: "29:50", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
+      { id: "h5", title: "Higher Timeframe Narrative", duration: "22:30", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
+      { id: "h6", title: "Liquidity Concepts", duration: "28:15", videoUrl: "https://www.youtube.com/embed/eELCzvVzJ8w" },
+      { id: "h7", title: "POI Selection", duration: "25:40", videoUrl: "https://www.youtube.com/embed/9eMvo5eyBTQ" },
+      { id: "h8", title: "Order Flow", duration: "31:00", videoUrl: "https://www.youtube.com/embed/6PdV4_U08v8" },
     ],
   },
   {
@@ -49,11 +53,14 @@ const coursesData: Course[] = [
     icon: "target",
     description: "Professional investing strategies for consistent profits",
     lessons: [
-      { id: "v1", title: "Investment Philosophy", duration: "20:00" },
-      { id: "v2", title: "Portfolio Construction", duration: "28:30" },
-      { id: "v3", title: "Market Analysis", duration: "32:15" },
-      { id: "v4", title: "Position Sizing", duration: "25:45" },
-      { id: "v5", title: "Trade Execution", duration: "19:20" },
+      { id: "v1", title: "1. Intro", duration: "8:30", videoUrl: "https://www.youtube.com/embed/TJtRDJEt2BE" },
+      { id: "v2", title: "2. Basics Of Forex", duration: "15:20", videoUrl: "https://www.youtube.com/embed/f-wuXxdyBRw" },
+      { id: "v3", title: "3. Introduction to Charts", duration: "22:15", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "v4", title: "4. Market Structure & Identifying Trend", duration: "28:45", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "v5", title: "5. Introduction to MetaTrader4", duration: "18:30", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
+      { id: "v6", title: "6. The Most Important Part Of Trading", duration: "25:00", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
+      { id: "v7", title: "7. Starting Your Trading Journey", duration: "19:20", videoUrl: "https://www.youtube.com/embed/eELCzvVzJ8w" },
+      { id: "v8", title: "8. Introduction To Being a Fund Manager", duration: "32:40", videoUrl: "https://www.youtube.com/embed/9eMvo5eyBTQ" },
     ],
   },
   {
@@ -63,10 +70,14 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Learn to flip markets with price action mastery",
     lessons: [
-      { id: "f1", title: "Price Action Fundamentals", duration: "26:10" },
-      { id: "f2", title: "Candlestick Patterns", duration: "33:45" },
-      { id: "f3", title: "Support & Resistance", duration: "29:00" },
-      { id: "f4", title: "Trend Trading", duration: "31:20" },
+      { id: "f1", title: "1. Supply and Demand Basics", duration: "13:31", videoUrl: "https://www.youtube.com/embed/iBjN28UVT9s" },
+      { id: "f2", title: "2. Inefficiency", duration: "18:45", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "f3", title: "3. How to Choose the Best Zones", duration: "22:30", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "f4", title: "4. Wick Zones", duration: "15:20", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
+      { id: "f5", title: "5. Mitigated vs Unmitigated", duration: "19:45", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
+      { id: "f6", title: "6. Who's in Control (GOLDEN RULE)", duration: "25:00", videoUrl: "https://www.youtube.com/embed/eELCzvVzJ8w" },
+      { id: "f7", title: "7. Risk / Confirm Entry", duration: "21:30", videoUrl: "https://www.youtube.com/embed/9eMvo5eyBTQ" },
+      { id: "f8", title: "8. Zone Refinements", duration: "28:15", videoUrl: "https://www.youtube.com/embed/6PdV4_U08v8" },
     ],
   },
   {
@@ -76,10 +87,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Precise entry and exit strategies for maximum profits",
     lessons: [
-      { id: "pm1", title: "Precision Entry Techniques", duration: "27:30" },
-      { id: "pm2", title: "Stop Loss Placement", duration: "22:15" },
-      { id: "pm3", title: "Take Profit Strategies", duration: "25:40" },
-      { id: "pm4", title: "Trade Management", duration: "30:00" },
+      { id: "pm1", title: "Precision Entry Techniques", duration: "27:30", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "pm2", title: "Stop Loss Placement", duration: "22:15", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "pm3", title: "Take Profit Strategies", duration: "25:40", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
+      { id: "pm4", title: "Trade Management", duration: "30:00", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
     ],
   },
   {
@@ -89,9 +100,9 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Factory-style approach to consistent pip gains",
     lessons: [
-      { id: "pf1", title: "Pip Factory Introduction", duration: "16:45" },
-      { id: "pf2", title: "Session Trading", duration: "28:30" },
-      { id: "pf3", title: "Multi-Timeframe Analysis", duration: "34:20" },
+      { id: "pf1", title: "Pip Factory Introduction", duration: "16:45", videoUrl: "https://www.youtube.com/embed/f-wuXxdyBRw" },
+      { id: "pf2", title: "Session Trading", duration: "28:30", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "pf3", title: "Multi-Timeframe Analysis", duration: "34:20", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
     ],
   },
   {
@@ -102,8 +113,8 @@ const coursesData: Course[] = [
     icon: "play",
     description: "VVS methodology for smart money trading",
     lessons: [
-      { id: "vvs1", title: "VVS Concepts Overview", duration: "21:00" },
-      { id: "vvs2", title: "Smart Money Techniques", duration: "29:45" },
+      { id: "vvs1", title: "VVS Concepts Overview", duration: "21:00", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
+      { id: "vvs2", title: "Smart Money Techniques", duration: "29:45", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
     ],
   },
   {
@@ -114,10 +125,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Simplified approach to forex trading success",
     lessons: [
-      { id: "fxs1", title: "Simplifying Forex", duration: "18:30" },
-      { id: "fxs2", title: "Key Levels", duration: "24:00" },
-      { id: "fxs3", title: "Entry Confirmations", duration: "27:15" },
-      { id: "fxs4", title: "Psychology of Trading", duration: "22:40" },
+      { id: "fxs1", title: "Simplifying Forex", duration: "18:30", videoUrl: "https://www.youtube.com/embed/TJtRDJEt2BE" },
+      { id: "fxs2", title: "Key Levels", duration: "24:00", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "fxs3", title: "Entry Confirmations", duration: "27:15", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "fxs4", title: "Psychology of Trading", duration: "22:40", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
   {
@@ -127,10 +138,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "TraqFX complete trading system",
     lessons: [
-      { id: "traq1", title: "TraqFX System Introduction", duration: "19:20" },
-      { id: "traq2", title: "Chart Setups", duration: "26:30" },
-      { id: "traq3", title: "Trade Execution", duration: "31:00" },
-      { id: "traq4", title: "Backtesting Methods", duration: "28:15" },
+      { id: "traq1", title: "TraqFX System Introduction", duration: "19:20", videoUrl: "https://www.youtube.com/embed/f-wuXxdyBRw" },
+      { id: "traq2", title: "Chart Setups", duration: "26:30", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "traq3", title: "Trade Execution", duration: "31:00", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "traq4", title: "Backtesting Methods", duration: "28:15", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
   {
@@ -140,10 +151,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Private mentorship program for serious traders",
     lessons: [
-      { id: "ment1", title: "Mentorship Overview", duration: "15:00" },
-      { id: "ment2", title: "Advanced Price Action", duration: "38:20" },
-      { id: "ment3", title: "Live Trading Sessions", duration: "45:00" },
-      { id: "ment4", title: "Q&A and Reviews", duration: "32:10" },
+      { id: "ment1", title: "Mentorship Overview", duration: "15:00", videoUrl: "https://www.youtube.com/embed/f-wuXxdyBRw" },
+      { id: "ment2", title: "Advanced Price Action", duration: "38:20", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "ment3", title: "Live Trading Sessions", duration: "45:00", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "ment4", title: "Q&A and Reviews", duration: "32:10", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
   {
@@ -153,9 +164,9 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Intensive bootcamp for accelerated learning",
     lessons: [
-      { id: "wwa1", title: "Bootcamp Day 1", duration: "55:00" },
-      { id: "wwa2", title: "Bootcamp Day 2", duration: "48:30" },
-      { id: "wwa3", title: "Bootcamp Day 3", duration: "52:15" },
+      { id: "wwa1", title: "Bootcamp Day 1", duration: "55:00", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "wwa2", title: "Bootcamp Day 2", duration: "48:30", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "wwa3", title: "Bootcamp Day 3", duration: "52:15", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
   {
@@ -165,8 +176,8 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Trading high liquidity zones for optimal entries",
     lessons: [
-      { id: "hlz1", title: "Understanding Liquidity", duration: "24:30" },
-      { id: "hlz2", title: "Zone Identification", duration: "28:45" },
+      { id: "hlz1", title: "Understanding Liquidity", duration: "24:30", videoUrl: "https://www.youtube.com/embed/eELCzvVzJ8w" },
+      { id: "hlz2", title: "Zone Identification", duration: "28:45", videoUrl: "https://www.youtube.com/embed/9eMvo5eyBTQ" },
     ],
   },
   {
@@ -177,9 +188,9 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Eye-opening insights into forex markets",
     lessons: [
-      { id: "eof1", title: "Market Revelations", duration: "26:00" },
-      { id: "eof2", title: "Hidden Patterns", duration: "31:20" },
-      { id: "eof3", title: "Institutional Trading", duration: "29:45" },
+      { id: "eof1", title: "Market Revelations", duration: "26:00", videoUrl: "https://www.youtube.com/embed/87sUp68nUQA" },
+      { id: "eof2", title: "Hidden Patterns", duration: "31:20", videoUrl: "https://www.youtube.com/embed/eELCzvVzJ8w" },
+      { id: "eof3", title: "Institutional Trading", duration: "29:45", videoUrl: "https://www.youtube.com/embed/9eMvo5eyBTQ" },
     ],
   },
   {
@@ -189,9 +200,9 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Fractal theory applied to market trading",
     lessons: [
-      { id: "fm1", title: "Fractal Theory Basics", duration: "22:15" },
-      { id: "fm2", title: "Identifying Fractals", duration: "27:30" },
-      { id: "fm3", title: "Fractal Trading Strategies", duration: "33:00" },
+      { id: "fm1", title: "Fractal Theory Basics", duration: "22:15", videoUrl: "https://www.youtube.com/embed/6PdV4_U08v8" },
+      { id: "fm2", title: "Identifying Fractals", duration: "27:30", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "fm3", title: "Fractal Trading Strategies", duration: "33:00", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
     ],
   },
   {
@@ -201,10 +212,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Complete guide to supply and demand trading",
     lessons: [
-      { id: "sd1", title: "Supply & Demand Basics", duration: "25:00" },
-      { id: "sd2", title: "Zone Drawing", duration: "28:30" },
-      { id: "sd3", title: "Trade Entries", duration: "31:15" },
-      { id: "sd4", title: "Advanced Concepts", duration: "35:40" },
+      { id: "sd1", title: "Supply & Demand Basics", duration: "13:31", videoUrl: "https://www.youtube.com/embed/iBjN28UVT9s" },
+      { id: "sd2", title: "Zone Drawing", duration: "28:30", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "sd3", title: "Trade Entries", duration: "31:15", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "sd4", title: "Advanced Concepts", duration: "35:40", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
   {
@@ -214,10 +225,10 @@ const coursesData: Course[] = [
     icon: "play",
     description: "Master order flow for precision trading",
     lessons: [
-      { id: "of1", title: "Order Flow Introduction", duration: "20:00" },
-      { id: "of2", title: "Reading Order Flow", duration: "32:45" },
-      { id: "of3", title: "Volume Profile", duration: "29:20" },
-      { id: "of4", title: "Delta Analysis", duration: "34:10" },
+      { id: "of1", title: "Order Flow Introduction", duration: "20:00", videoUrl: "https://www.youtube.com/embed/6PdV4_U08v8" },
+      { id: "of2", title: "Reading Order Flow", duration: "32:45", videoUrl: "https://www.youtube.com/embed/aT92mRJGks4" },
+      { id: "of3", title: "Volume Profile", duration: "29:20", videoUrl: "https://www.youtube.com/embed/pUXv9KsnswY" },
+      { id: "of4", title: "Delta Analysis", duration: "34:10", videoUrl: "https://www.youtube.com/embed/1HkH28P1dpg" },
     ],
   },
 ];
