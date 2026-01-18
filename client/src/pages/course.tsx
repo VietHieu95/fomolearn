@@ -15,6 +15,7 @@ import {
   Folder
 } from "lucide-react";
 import { coursesData } from "@/lib/courses-data";
+import { VipCoursePromo } from "@/components/vip-cta";
 import { useState, useEffect } from "react";
 import type { Lesson } from "@shared/schema";
 
@@ -244,6 +245,8 @@ export default function CoursePage() {
               </div>
             </CardContent>
           </Card>
+          
+          <VipCoursePromo />
         </div>
       </div>
     </div>

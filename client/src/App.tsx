@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { VipFloatingButton } from "@/components/vip-cta";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import CoursePage from "@/pages/course";
@@ -50,6 +50,7 @@ function App() {
           </div>
         </SidebarProvider>
         <Toaster />
+        <VipFloatingButton />
       </TooltipProvider>
     </QueryClientProvider>
   );

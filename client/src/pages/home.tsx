@@ -1,9 +1,12 @@
 import { useLocation } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { CourseCard } from "@/components/course-card";
+import { VipBanner, VipButton } from "@/components/vip-cta";
 import { coursesData } from "@/lib/courses-data";
-import { Sparkles, TrendingUp, BookOpen, Users } from "lucide-react";
+import { Sparkles, TrendingUp, BookOpen, Crown, ArrowRight } from "lucide-react";
+import { SiTelegram } from "react-icons/si";
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -28,7 +31,7 @@ export default function Home() {
             Explore our comprehensive collection of trading courses. From Smart Money Concepts 
             to Price Action, master the skills you need to become a successful trader.
           </p>
-          <div className="flex flex-wrap gap-4 text-sm">
+          <div className="flex flex-wrap gap-4 text-sm mb-6">
             <div className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-2">
               <BookOpen className="h-4 w-4" />
               <span>{coursesData.length} Courses</span>
@@ -38,30 +41,27 @@ export default function Home() {
               <span>{totalLessons} Lessons</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-2">
-              <Users className="h-4 w-4" />
-              <span>No Payment Required</span>
+              <Crown className="h-4 w-4" />
+              <span>100% Free</span>
             </div>
           </div>
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 hover:from-yellow-500 hover:via-yellow-600 hover:to-amber-600 text-black font-bold shadow-xl"
+            data-testid="button-hero-vip"
+          >
+            <a href="https://t.me/Mrjarome_bot?start=VIP" target="_blank" rel="noopener noreferrer">
+              <SiTelegram className="h-5 w-5 mr-2" />
+              Tham gia VIP ngay
+              <ArrowRight className="h-4 w-4 ml-2" />
+            </a>
+          </Button>
         </div>
         <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-white/5 to-transparent" />
       </div>
 
-      <Card className="border-primary/20 bg-primary/5">
-        <CardContent className="p-4">
-          <div className="flex items-start gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 shrink-0 mt-0.5">
-              <Sparkles className="h-4 w-4 text-primary" />
-            </div>
-            <div>
-              <p className="font-medium text-foreground mb-1">New content every week!</p>
-              <p className="text-sm text-muted-foreground">
-                Video recaps, lessons, TradingView charts, case studies and more. 
-                No payment required. No ads. Just pure learning.
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      <VipBanner />
 
       <section>
         <div className="flex items-center justify-between mb-4">
@@ -98,6 +98,27 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <Card className="border-2 border-dashed border-yellow-500/50 bg-gradient-to-r from-yellow-500/5 via-transparent to-orange-500/5">
+        <CardContent className="p-8 text-center">
+          <Crown className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
+          <h3 className="text-xl font-bold mb-2">Sẵn sàng lên level?</h3>
+          <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+            Tham gia VIP để nhận mentorship 1-1, tín hiệu trading realtime, và hỗ trợ 24/7 từ team FOMO Trading
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 hover:from-yellow-600 hover:via-amber-600 hover:to-orange-600 text-white font-bold shadow-lg"
+            data-testid="button-footer-vip"
+          >
+            <a href="https://t.me/Mrjarome_bot?start=VIP" target="_blank" rel="noopener noreferrer">
+              <SiTelegram className="h-5 w-5 mr-2" />
+              Nhắn Telegram để Join VIP
+            </a>
+          </Button>
+        </CardContent>
+      </Card>
 
       <footer className="text-center py-8 border-t border-border">
         <p className="text-muted-foreground text-sm italic">

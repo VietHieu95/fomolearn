@@ -20,10 +20,10 @@ import {
   Target, 
   Play, 
   Folder, 
-  GraduationCap,
-  Coffee
+  GraduationCap
 } from "lucide-react";
 import { coursesData } from "@/lib/courses-data";
+import { VipSidebarCard } from "@/components/vip-cta";
 import logoImage from "@assets/IMG_4796_3_1768710539336.JPG";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -117,11 +117,8 @@ export function AppSidebar() {
         </ScrollArea>
       </SidebarContent>
 
-      <SidebarFooter className="p-4 border-t border-sidebar-border">
-        <div className="flex items-center gap-2 text-xs text-sidebar-foreground/70">
-          <Coffee className="h-4 w-4" />
-          <span>Life is beautiful. Let's Chill n Trade</span>
-        </div>
+      <SidebarFooter className="border-t border-sidebar-border pt-2">
+        <VipSidebarCard />
       </SidebarFooter>
     </Sidebar>
   );
