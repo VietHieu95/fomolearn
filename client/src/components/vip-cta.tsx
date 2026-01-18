@@ -41,7 +41,7 @@ export function VipBanner() {
               </Badge>
             </div>
             <p className="text-muted-foreground text-sm">
-              Nhận tín hiệu trading realtime, mentorship 1-1, và nhiều content độc quyền khác!
+              Get realtime trading signals, 1-on-1 mentorship, and exclusive content!
             </p>
           </div>
           <Button
@@ -52,7 +52,7 @@ export function VipBanner() {
           >
             <a href={VIP_LINK} target="_blank" rel="noopener noreferrer">
               <SiTelegram className="h-5 w-5 mr-2" />
-              Nhắn Telegram ngay
+              Message on Telegram
               <ArrowRight className="h-4 w-4 ml-2" />
             </a>
           </Button>
@@ -86,7 +86,7 @@ export function VipSidebarCard() {
         <span className="font-semibold text-sm text-yellow-700 dark:text-yellow-400">VIP Access</span>
       </div>
       <p className="text-xs text-muted-foreground mb-3">
-        Tín hiệu trading, mentorship 1-1 & content độc quyền
+        Trading signals, 1-on-1 mentorship & exclusive content
       </p>
       <Button
         asChild
@@ -96,7 +96,7 @@ export function VipSidebarCard() {
       >
         <a href={VIP_LINK} target="_blank" rel="noopener noreferrer">
           <SiTelegram className="h-3 w-3 mr-1" />
-          Nhắn tin ngay
+          Message Now
         </a>
       </Button>
     </div>
@@ -113,11 +113,11 @@ export function VipCoursePromo() {
           </div>
           <div className="flex-1">
             <h4 className="font-bold text-sm mb-1 flex items-center gap-2">
-              Muốn học nhanh hơn?
+              Want to learn faster?
               <Star className="h-3 w-3 text-yellow-500 fill-yellow-500" />
             </h4>
             <p className="text-xs text-muted-foreground mb-3">
-              VIP members được mentorship trực tiếp, hỏi đáp 24/7, và tín hiệu trading realtime!
+              VIP members get direct mentorship, 24/7 Q&A support, and realtime trading signals!
             </p>
             <Button
               asChild
@@ -127,7 +127,7 @@ export function VipCoursePromo() {
             >
               <a href={VIP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-4 w-4 mr-2" />
-                Chat với tôi
+                Chat with me
               </a>
             </Button>
           </div>

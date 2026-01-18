@@ -53,7 +53,7 @@ export default function Home() {
           >
             <a href="https://t.me/Mrjarome_bot?start=VIP" target="_blank" rel="noopener noreferrer">
               <SiTelegram className="h-5 w-5 mr-2" />
-              Tham gia VIP ngay
+              Join VIP Now
               <ArrowRight className="h-4 w-4 ml-2" />
             </a>
           </Button>
@@ -102,9 +102,9 @@ export default function Home() {
       <Card className="border-2 border-dashed border-yellow-500/50 bg-gradient-to-r from-yellow-500/5 via-transparent to-orange-500/5">
         <CardContent className="p-8 text-center">
           <Crown className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
-          <h3 className="text-xl font-bold mb-2">Sẵn sàng lên level?</h3>
+          <h3 className="text-xl font-bold mb-2">Ready to level up?</h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            Tham gia VIP để nhận mentorship 1-1, tín hiệu trading realtime, và hỗ trợ 24/7 từ team FOMO Trading
+            Join VIP for 1-on-1 mentorship, realtime trading signals, and 24/7 support from FOMO Trading team
           </p>
           <Button
             asChild
@@ -114,7 +114,7 @@ export default function Home() {
           >
             <a href="https://t.me/Mrjarome_bot?start=VIP" target="_blank" rel="noopener noreferrer">
               <SiTelegram className="h-5 w-5 mr-2" />
-              Nhắn Telegram để Join VIP
+              Message on Telegram to Join VIP
             </a>
           </Button>
         </CardContent>
