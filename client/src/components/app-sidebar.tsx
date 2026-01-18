@@ -20,11 +20,10 @@ import {
   Target, 
   Play, 
   Folder, 
-  Flame,
   GraduationCap,
   Coffee
 } from "lucide-react";
-import { coursesData, specialLinks } from "@/lib/courses-data";
+import { coursesData } from "@/lib/courses-data";
 import logoImage from "@assets/IMG_4796_3_1768710539336.JPG";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -33,7 +32,6 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   target: Target,
   play: Play,
   folder: Folder,
-  fire: Flame,
 };
 
 export function AppSidebar() {
@@ -116,32 +114,6 @@ export function AppSidebar() {
             </SidebarGroupContent>
           </SidebarGroup>
 
-          <SidebarGroup>
-            <SidebarGroupLabel className="flex items-center gap-2 px-4">
-              <Flame className="h-4 w-4" />
-              <span>Special</span>
-            </SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                {specialLinks.map((link) => {
-                  const Icon = iconMap[link.icon] || Folder;
-                  return (
-                    <SidebarMenuItem key={link.id}>
-                      <SidebarMenuButton
-                        asChild
-                        data-testid={`link-special-${link.id}`}
-                      >
-                        <Link href={`/special/${link.id}`}>
-                          <Icon className="h-4 w-4" />
-                          <span className="truncate">{link.title}</span>
-                        </Link>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  );
-                })}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
         </ScrollArea>
       </SidebarContent>
 
