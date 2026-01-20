@@ -1,5 +1,7 @@
-import { type User, type InsertUser, type Course, type Lesson } from "@shared/schema";
+import { users, type User, type InsertUser, type Course, type Lesson } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
@@ -233,6 +235,31 @@ const coursesData: Course[] = [
   },
 ];
 
+export class DatabaseStorage implements IStorage {
+  async getUser(id: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user;
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const [user] = await db.insert(users).values(insertUser).returning();
+    return user;
+  }
+
+  async getAllCourses(): Promise<Course[]> {
+    return coursesData;
+  }
+
+  async getCourseById(id: string): Promise<Course | undefined> {
+    return coursesData.find((c) => c.id === id);
+  }
+}
+
 export class MemStorage implements IStorage {
   private users: Map<string, User>;
   private courses: Map<string, Course>;
@@ -240,7 +267,7 @@ export class MemStorage implements IStorage {
   constructor() {
     this.users = new Map();
     this.courses = new Map();
-    
+
     coursesData.forEach((course) => {
       this.courses.set(course.id, course);
     });
@@ -272,4 +299,6 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+export const storage = process.env.DATABASE_URL
+  ? new DatabaseStorage()
+  : new MemStorage();
